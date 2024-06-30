@@ -1,0 +1,71 @@
+### Subject 1: Adam Optimizer Adjustments
+- Adam optimizer allows for the adjustment of learning rates.
+- There is discretion in controlling constants within Adam optimizer.
+- Fine-tuning these constants is aimed at achieving better performance through the final stages.
+- Using Adam generally offers no significant drawbacks.
+- It is summarized that Adam optimizer is beneficial overall.
+
+### Subject 2: Activation Functions
+- Sigmoid, tangent, and arctangent activation functions are used to prevent value divergence.
+- The primary aim of using these functions is to manage values between 0 and 1 or -1 and 1.
+- The reason for controlling divergence is to enable the stacking of many layers.
+- Layer stacking, termed DNN (Deep Neural Networks), faces issues when the learning process is ineffective.
+- The concept of compressing values to prevent divergence impacts learning and leads to the gradient vanishing problem.
+
+### Subject 3: Learning Issues in Deep Neural Networks
+- Deep neural networks struggle with effective learning when many layers are stacked.
+- The compression of values to prevent divergence affects error backpropagation.
+- Errors calculated during forward propagation are also compressed.
+- This compression reduces the ability to effectively adjust weights during learning.
+- The problem is identified as the gradient vanishing, which impacts the front layers of deep networks.
+
+### Subject 4: Solution to Vanishing Gradient Problem
+- To solve the vanishing gradient problem, new activation functions are introduced.
+- One solution is using the ReLU (Rectified Linear Unit) activation function.
+- ReLU changes negative values to zero while retaining positive values.
+- Unlike sigmoid and tangent, ReLU does not compress values, preserving value magnitude.
+- This improvement enhances learning efficiency, especially in deep layers of the network.
+
+### Subject 5: Impact and Success of Deep Learning
+- The vanishing gradient issue was a major theoretical barrier for deep learning success.
+- Solving this issue allowed for the vast expansion and success of deep learning models.
+- Improved activation functions contributed to overcoming theoretical limitations.
+- ReLU played a significant role in the breakthroughs seen in deep learning.
+- These advancements led to significant progress and application in various fields.
+
+---
+
+### 주제 1: 아담 옵티마이저 조정
+- 아담 옵티마이저는 학습률 조절이 가능합니다.
+- 아담 옵티마이저 내에서 상수들을 조절할 수 있습니다.
+- 이러한 상수들을 조절하여 마지막 단계에서 더 나은 성능을 얻기 위해 튜닝합니다.
+- 아담을 사용하면 특별히 손해 볼 것이 없습니다.
+- 일반적으로 아담 옵티마이저는 유용하다고 요약됩니다.
+
+### 주제 2: 액티베이션 함수
+- 시그모이드, 탄젠트, 아크탄젠트와 같은 액티베이션 함수는 값의 발산을 방지합니다.
+- 이러한 함수는 값들을 0에서 1, 또는 -1에서 1 사이로 제어하는 것에 초점이 맞춰져 있습니다.
+- 발산을 제어하는 이유는 많은 레이어를 쌓기 위함입니다.
+- 딥 뉴럴 네트워크(DNN)에서 많은 레이어를 쌓을 때 학습이 어려운 문제가 발생합니다.
+- 값의 압축은 학습에 영향을 주어, 이는 gradient가 vanishing 되는 문제로 정의됩니다.
+
+### 주제 3: 딥 뉴럴 네트워크의 학습 문제
+- 딥 뉴럴 네트워크는 많은 레이어를 쌓을 때 효과적인 학습이 어렵습니다.
+- 값의 압축은 에러 역전파에도 영향을 미칩니다.
+- 앞으로 전파되는 동안 계산된 에러 또한 압축됩니다.
+- 이 압축은 학습 중에 웨이트의 효과적인 조정을 감소시킵니다.
+- 이 문제는 gradient vanishing으로 정의되며, 깊은 네트워크의 앞쪽 레이어에 영향을 미칩니다.
+
+### 주제 4: gradient vanishing 문제 해결
+- gradient vanishing 문제를 해결하기 위해 새로운 액티베이션 함수가 도입되었습니다.
+- 렐루 (ReLU) 액티베이션 함수가 그 해결책 중 하나입니다.
+- ReLU는 음수 값을 0으로 바꾸고 양수 값은 그대로 유지합니다.
+- 시그모이드나 탄젠트와는 달리, ReLU는 값을 압축하지 않아 값의 크기를 유지합니다.
+- 이를 통해 딥 레이어의 학습 효율성이 향상되었습니다.
+
+### 주제 5: 딥러닝의 영향과 성공
+- gradient vanishing 문제는 딥러닝의 성공을 가로막는 주요 이론적 장벽이었습니다.
+- 이 문제를 해결함으로써 딥러닝 모델의 대규모 확장과 성공이 가능해졌습니다.
+- 개선된 액티베이션 함수는 이론적 한계를 극복하는 데 기여했습니다.
+- ReLU는 딥러닝의 중대한 돌파구에 중요한 역할을 했습니다.
+- 이러한 진보는 다양한 분야에서 큰 발전과 응용을 가져왔습니다.
