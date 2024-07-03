@@ -1,0 +1,21 @@
+1. /etc/ 에 있는 모든 .conf 파일 (설정 파일) 의 내용이 총 몇 글자나 되는지 확인해보기
+
+  find . -name "*.conf" -exec cat {} + 2>/dev/null | wc -c
+
+2. whisper 프로젝트는 몇 명이나 commit 을 남겼는지 확인해보기
+
+  git log --format='%an %ae' | sort | uniq | wc -l
+
+3. linux(https://github.com/torvalds/linux) 프로젝트에 있는 파일들 중 최근 1년내에 변화가 있었던 파일들의 갯수 확인해보기
+  ( https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git )
+
+  git log --since="1 year ago" --name-only --pretty=format: | sort | uniq > recent_modified_file_list
+
+4. linux 프로젝트에서 "TODO" 할일 목록들을 만들어보기
+
+  find . -name "*.h" -exec cat {} + | grep TODO | grep -v def
+
+5. linux 프로젝트에서 1년내 수정된 파일 중 "TODO" 할일 목록들을 만들어보기
+
+   grep [.]h recent_modified_file_list > tmp.txt
+   xargs -a tmp.txt -I {} grep "TODO" {} 2>/dev/null
